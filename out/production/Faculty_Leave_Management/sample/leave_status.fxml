@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="504.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.leavestatus">
+   <children>
+      <ImageView fitHeight="447.0" fitWidth="504.0" layoutX="1.0">
+         <image>
+            <Image url="@da92lta-f5d7c7f9-847e-4ff7-823f-136e22218abf.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="156.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave Status">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="35.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="startdate" layoutX="142.0" layoutY="178.0" promptText="Start Date" />
+      <DatePicker fx:id="enddate" layoutX="143.0" layoutY="239.0" prefHeight="31.0" prefWidth="218.0" promptText="End Date" />
+      <TextField fx:id="status" layoutX="159.0" layoutY="300.0" promptText="Status" />
+      <Button layoutX="220.0" layoutY="362.0" mnemonicParsing="false" onAction="#check" text="Check" />
+      <TextField fx:id="fid" layoutX="157.0" layoutY="114.0" promptText="ID" />
+   </children>
+</AnchorPane>

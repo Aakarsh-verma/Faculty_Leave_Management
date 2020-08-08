@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.facultyController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="838.0">
+         <image>
+            <Image url="@yellow-abstract-cubes-ppt-design--powerpoint-backgrounds.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar fx:id="adminmenubar" layoutY="-2.0" prefHeight="32.0" prefWidth="838.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Leave">
+               <items>
+                  <MenuItem fx:id="menuitem1" mnemonicParsing="false" onAction="#handle1" text="Apply Leave" />
+                  <MenuItem fx:id="menuitem2" mnemonicParsing="false" onAction="#handle1" text="Leave Status" />
+                  <MenuItem fx:id="menuitem3" mnemonicParsing="false" onAction="#handle1" text="Leaves" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Report">
+               <items>
+                  <MenuItem fx:id="menuitem4" mnemonicParsing="false" onAction="#handle1" text="Statistics" />
+               </items>
+            </Menu>
+         </menus>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuBar>
+      <Text fill="#0c176f" layoutX="289.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
+         <font>
+            <Font name="System Bold" size="53.0" />
+         </font>
+      </Text>
+      <Text fill="#e44100" layoutX="157.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty Leave Management">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Text>
+      <Button layoutX="720.0" layoutY="477.0" mnemonicParsing="false" onAction="#logout" prefHeight="32.0" prefWidth="88.0" text="Log Out" />
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="319.0" layoutY="184.0">
+         <image>
+            <Image url="@faculty.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="id" layoutX="703.0" layoutY="35.0" prefHeight="32.0" prefWidth="88.0" text="Label" textFill="#ff1b1b">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

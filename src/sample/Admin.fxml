@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="800.0">
+         <image>
+            <Image url="@yellow-abstract-cubes-ppt-design--powerpoint-backgrounds.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="-2.0" prefHeight="30.0" prefWidth="800.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Faculty">
+               <items>
+                  <MenuItem fx:id="menuitem1" mnemonicParsing="false" onAction="#handle4" text="Staff Details" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Leave">
+            <items>
+              <MenuItem fx:id="menuitem2" mnemonicParsing="false" onAction="#handle4" text="Leave Request" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Report">
+            <items>
+              <MenuItem fx:id="menuitem3" mnemonicParsing="false" onAction="#handle4" text="Staff Report" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Log-out">
+              <items>
+                <MenuItem fx:id="menuitem4" mnemonicParsing="false" onAction="#logout" text="Log-out" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Text fill="#b51b1b" layoutX="87.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty Leave Management" wrappingWidth="626.9921875">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Text>
+      <Text fill="#0a2a5b" layoutX="282.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="174.0" fitWidth="178.0" layoutX="311.0" layoutY="164.0">
+         <image>
+            <Image url="@download.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="fid" layoutX="623.0" layoutY="68.0" prefHeight="32.0" prefWidth="64.0" text="Label" />
+   </children>
+</AnchorPane>

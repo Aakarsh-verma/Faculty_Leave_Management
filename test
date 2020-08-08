@@ -1,0 +1,248 @@
+import java.io.IOException;
+
+
+public class LoginController {
+
+    private Parent parent;
+    private Scene scene;
+    private Stage stage;
+    @FXML
+    private TextField userName;
+    @FXML
+    private TextField passwordField;
+
+
+private HomeController homeController;
+    public LoginController() {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/login.fxml"));
+        fxmlLoader.setController(this);
+        try {
+            parent = (Parent) fxmlLoader.load();
+            scene = new Scene(parent, 600, 400);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    protected void handleSubmitButtonAction(ActionEvent event) {
+        System.out.println(userName.getText());
+        if (userName.getText().trim().length() > 0 && passwordField.getText().trim().length() > 0) {
+            homeController = new HomeController();
+            homeController.redirectHome(stage, userName.getText().trim());
+        }
+
+    }
+
+    public void launchLogingController(Stage stage) {
+        this.stage = stage;
+        stage.setTitle("User Login");
+        stage.setScene(scene);
+        stage.setResizable(true);
+        stage.hide();
+        stage.show();
+    }
+}
+HomeController.java
+
+
+ package sample;
+    import javafx.fxml.FXML;
+    import javafx.fxml.FXMLLoader;
+    import javafx.scene.Parent;
+    import javafx.scene.Scene;
+    import javafx.scene.text.Text;
+    import javafx.stage.Stage;
+
+    import java.io.IOException;
+
+    public class HomeController {
+        private Parent parent;
+        private Scene scene;
+        private Stage stage;
+        @FXML
+        private Text welcomeText;
+
+        public HomeController() {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/home.fxml"));
+            fxmlLoader.setController(this);
+            try {
+                parent = (Parent) fxmlLoader.load();
+                scene = new Scene(parent, 600, 400);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+        public void redirectHome(Stage stage, String name) {
+            stage.setTitle("Home");
+            stage.setScene(scene);
+            welcomeText.setText("Hello " + name + "! You are welcome.");
+            stage.hide();
+            stage.show();
+        }
+
+
+
+
+menuitem1.setOnAction(new EventHandler<ActionEvent>() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     int CLm_count = 3, MLm_count = 4, ELy_count = 15;
+       /// Class.forName("org.postgresql.Driver");
+        Connection con = DriverManager.getConnection("jdbc:postgresql://localhost/Emp_leave", "postgres", "12345");
+        Statement stmt = con.createStatement();
+
+        if (lt.getText().equals("Casual") && CLm_count != 0) {
+            String l = lt.getText();
+            //Integer id = Integer.parseInt(fid.getText());
+            //String name = fname.getText();
+            //LocalDate date1 = stdate.getValue();
+            //LocalDate date2 = edate.getValue();
+            //String r1 = reason.getText();
+            //String dept = dtxt.getText();
+            //ResultSet r = stmt.executeQuery("insert into Applyleave ( facultyid, name, Dept, startDat, endDate, Reason,leavetype) values('" + id + "','" + name + "','" + dept + "','" + date1 + "','" + date2 + "','" + r1 + "','" + l + "');");
+            while (r.next()) {
+                lb.setText("Applied");
+            }
+            r.close();
+            stmt.close();
+        }
+        try {
+                con.close();
+                con = null;
+            } catch (Exception e1) {
+            }
+            CLm_count--;
+        }
+    }
+
+
+        /*else if(lt.getText().equals("Medical")) {
+            String l = lt.getText();
+            Integer id = Integer.parseInt(fid.getText());
+            String name= fname.getText();
+            LocalDate date1 = stdate.getValue();
+            LocalDate date2 = edate.getValue();
+            String r1 = reason.getText();
+            //String sql = "insert into Applyleave values('"+id+"','"+name+"','"+date1+"','"+date2+"','"+r1+"');";
+            ResultSet r = stmt.executeQuery("insert into Applyleave values('"+id+"','"+name+"','"+date1+"','"+date2+"','"+r1+"','"+l+"');");
+            while (r.next()) {
+                lb.setText("Applied");
+            }
+            r.close();
+            stmt.close();
+            try {
+                con.close();
+                con = null;
+            }catch (Exception e1){
+            }
+        }
+
+        else if(lt.getText().equals("Paid")) {
+            String l = lt.getText();
+            Integer id = Integer.parseInt(fid.getText());
+            String name= fname.getText();
+            LocalDate date1 = stdate.getValue();
+            LocalDate date2 = edate.getValue();
+            String r1 = reason.getText();
+            //String sql = "insert into Applyleave values('"+id+"','"+name+"','"+date1+"','"+date2+"','"+r1+"');";
+            ResultSet r = stmt.executeQuery("insert into Applyleave values('"+id+"','"+name+"','"+date1+"','"+date2+"','"+r1+"','"+l+"');");
+            while (r.next()) {
+                lb.setText("Applied");
+            }
+            r.close();
+            stmt.close();
+            try {
+                con.close();
+                con = null;
+            }catch (Exception e1){
+            }
+        }*/
+
+    //}
+
+//}
+
+}
+
+/*******************************************************************************
+ *
+    *I will provide this
+ * Tables                                      *
+ *                                                                             *
+ ******************************************************************************/
+.table-view, .tree-table-view {
+    /* Constants used throughout the tableview. */
+    -fx-table-header-border-color: transparent;
+    -fx-table-cell-border-color: -fx-box-border; /* Horizontal Lines*/
+    -fx-background-color: transparent;
+}
+
+/* The column header row is made up of a number of column-header, one for each
+   TableColumn, and a 'filler' area that extends from the right-most column
+   to the edge of the tableview, or up to the 'column control' button. */
+.table-view .filler, .tree-table-view .filler, .table-view .column-header,
+.tree-table-view .column-header {
+    -fx-size: 65;
+    -fx-border-style: null;
+    -fx-border-color: -swatch-grey;
+    -fx-border-width: 0 0 2 0;
+    -fx-background-color: transparent;
+}
+
+.table-view .show-hide-columns-button, .tree-table-view .show-hide-columns-button
+{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label, .table-view .filler .label,
+.table-view .column-drag-header .label, .tree-table-view .column-header .label,
+.tree-table-view .filler .label, .tree-table-view .column-drag-header .label
+{
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-view .column-header-background, .tree-table-view .column-header-background
+{
+    -fx-background-color: transparent;
+}
+
+.table-row-cell, .tree-table-row-cell {
+    -fx-cell-size: 40px;
+}
+
+.table-cell {
+    -fx-border-color: transparent; /* Vertical Lines*/
+    -fx-border-width: 1;
+}
+
+
+ String sql = "insert into applyleave values("+username.getText()+",'"+fname.getText()+"','"+dept.getText()+"','"+leavetype.getText()+"','"+sd+"','"+ed+"','"+reason.getText()+"');";

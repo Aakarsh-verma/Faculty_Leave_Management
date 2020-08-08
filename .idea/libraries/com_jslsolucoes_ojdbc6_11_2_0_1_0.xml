@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.jslsolucoes:ojdbc6:11.2.0.1.0" type="repository">
+    <properties maven-id="com.jslsolucoes:ojdbc6:11.2.0.1.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ojdbc6-11.2.0.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/ojdbc6-11.2.0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

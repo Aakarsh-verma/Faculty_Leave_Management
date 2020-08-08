@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StatisticsController">
+   <children>
+      <ImageView fitHeight="521.0" fitWidth="787.0">
+         <image>
+            <Image url="@da92lta-f5d7c7f9-847e-4ff7-823f-136e22218abf.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="324.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistics">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Text>
+      <Label layoutX="304.0" layoutY="447.0" text="ID:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="343.0" layoutY="447.0" />
+      <TableView fx:id="table" layoutY="108.0" prefHeight="301.0" prefWidth="787.0" stylesheets="@table.css">
+         <columns>
+            <TableColumn fx:id="f_id" editable="false" prefWidth="63.0" text="F_id" />
+            <TableColumn fx:id="f_name" editable="false" prefWidth="135.0" text="f_name" />
+            <TableColumn fx:id="dept" editable="false" minWidth="0.0" prefWidth="86.0" text="Dept" />
+            <TableColumn fx:id="LeaveType" editable="false" prefWidth="95.0" text="LeaveType" />
+            <TableColumn fx:id="StartDate" editable="false" prefWidth="98.0" text="StartDate" />
+            <TableColumn fx:id="EndDate" editable="false" prefWidth="92.0" text="EndDate" />
+            <TableColumn fx:id="Reason" editable="false" prefWidth="119.0" text="Reason" />
+            <TableColumn fx:id="Status" editable="false" prefWidth="98.0" text="Status" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

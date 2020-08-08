@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LeaveRequestController">
+   <center>
+      <TableView prefHeight="400.0" prefWidth="393.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="fid" prefWidth="75.0" text="F_id" />
+          <TableColumn fx:id="fname" prefWidth="75.0" text="F_name" />
+            <TableColumn fx:id="dept" prefWidth="75.0" text="dept" />
+            <TableColumn fx:id="leavetype" prefWidth="99.0" text="LeaveType" />
+            <TableColumn fx:id="startdate" prefWidth="87.0" text="startdate" />
+            <TableColumn fx:id="enddate" prefWidth="95.0" text="enddate" />
+            <TableColumn fx:id="reason" prefWidth="87.0" text="Reason" />
+            <TableColumn fx:id="Status" prefWidth="115.0" text="status" />
+            <TableColumn fx:id="edit" prefWidth="118.0" text="edit" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
