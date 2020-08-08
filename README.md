@@ -1,5 +1,5 @@
 # Faculty Leave Management
- **This is a project done in first semester in my second year for an assignment. **
+**This is a project done in first semester of my second year for an assignment. **
 
 
 ## Problem Statement
