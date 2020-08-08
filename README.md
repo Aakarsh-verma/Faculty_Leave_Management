@@ -17,4 +17,18 @@
 
 ## Screen Shots:
 
-[link to image!]()
+![Image of leave](https://github.com/Aakarsh-verma/Faculty_Leave_Management/blob/master/images/leave8.PNG)
+
+![Image of leave](https://github.com/Aakarsh-verma/Faculty_Leave_Management/blob/master/images/leave7.PNG)
+
+![Image of leave](https://github.com/Aakarsh-verma/Faculty_Leave_Management/blob/master/images/leave6.PNG)
+
+![Image of leave](https://github.com/Aakarsh-verma/Faculty_Leave_Management/blob/master/images/leave5.PNG)
+
+![Image of leave](https://github.com/Aakarsh-verma/Faculty_Leave_Management/blob/master/images/leave4.PNG)
+
+![Image of leave](https://github.com/Aakarsh-verma/Faculty_Leave_Management/blob/master/images/leave3.PNG)
+
+![Image of leave](https://github.com/Aakarsh-verma/Faculty_Leave_Management/blob/master/images/leave2.PNG)
+
+![Image of leave](https://github.com/Aakarsh-verma/Faculty_Leave_Management/blob/master/images/leave1.PNG)
